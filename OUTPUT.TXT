@@ -1,0 +1,122 @@
+Number of member=3
+Number of Joint=4
+
+For Joint 1,Distance form 0th end is 0.00
+For Joint 2,Distance form 0th end is 5.00
+For Joint 3,Distance form 0th end is 9.00
+For Joint 4,Distance form 0th end is 12.00
+For Joint 1,	Displacement[Y]=0	Rotation[Z]=0
+For Joint 2,	Displacement[Y]=0	Rotation[Z]=1
+For Joint 3,	Displacement[Y]=0	Rotation[Z]=1
+For Joint 4,	Displacement[Y]=0	Rotation[Z]=1
+
+	********For Member 1***********
+
+JEnd=1	KEnd=2	I=2.00	E=2.00	
+Length of the member is 5.00
+
+*****Stiffness matrix [K] [SM1]=
+
+0.38	0.96	-0.38	0.96	
+0.96	3.20	-0.96	1.60	
+-0.38	-0.96	0.38	-0.96	
+0.96	1.60	-0.96	3.20	
+
+	********For Member 2***********
+
+JEnd=2	KEnd=3	I=2.00	E=2.00	
+Length of the member is 4.00
+
+*****Stiffness matrix [K] [SM2]=
+
+0.75	1.50	-0.75	1.50	
+1.50	4.00	-1.50	2.00	
+-0.75	-1.50	0.75	-1.50	
+1.50	2.00	-1.50	4.00	
+
+	********For Member 3***********
+
+JEnd=3	KEnd=4	I=2.00	E=2.00	
+Length of the member is 3.00
+
+*****Stiffness matrix [K] [SM3]=
+
+1.78	2.67	-1.78	2.67	
+2.67	5.33	-2.67	2.67	
+-1.78	-2.67	1.78	-2.67	
+2.67	2.67	-2.67	5.33	
+
+******Joint stiffness matrix [Sj]=
+
+0.38	0.96	-0.38	0.96	0.00	0.00	0.00	0.00	
+0.96	3.20	-0.96	1.60	0.00	0.00	0.00	0.00	
+-0.38	-0.96	1.13	0.54	-0.75	1.50	0.00	0.00	
+0.96	1.60	0.54	7.20	-1.50	2.00	0.00	0.00	
+0.00	0.00	-0.75	-1.50	2.53	1.17	-1.78	2.67	
+0.00	0.00	1.50	2.00	1.17	9.33	-2.67	2.67	
+0.00	0.00	0.00	0.00	-1.78	-2.67	1.78	-2.67	
+0.00	0.00	0.00	0.00	2.67	2.67	-2.67	5.33	
+
+AMl matrix for Member 1 
+ 
+AMl[1][1]=110.00
+AMl[1][2]=113.67
+AMl[1][3]=90.00
+AMl[1][4]=-89.67
+
+AMl matrix for Member 2 
+ 
+AMl[2][1]=10.00
+AMl[2][2]=10.00
+AMl[2][3]=10.00
+AMl[2][4]=-10.00
+
+AMl matrix for Member 3 
+ 
+AMl[3][1]=11.11
+AMl[3][2]=-7.41
+AMl[3][3]=5.56
+AMl[3][4]=3.70
+
+Combined load vector [Ae]
+
+Ae[1]=-110.00
+Ae[2]=-113.67
+Ae[3]=-100.00
+Ae[4]=79.67
+Ae[5]=-21.11
+Ae[6]=17.41
+Ae[7]=-105.56
+Ae[8]=-23.70
+
+Displacement matrix [Delta]
+ :
+dJ[1]=-0.00
+dJ[2]=-0.00
+dJ[3]=-0.00
+dJ[4]=10.80
+dJ[5]=0.00
+dJ[6]=0.96
+dJ[7]=-0.00
+dJ[8]=-4.92
+
+[AM] Member end action for member : 1 
+
+AM[1]=120.37
+AM[2]=130.95
+AM[3]=79.632
+AM[4]=-55.11
+
+[AM] Member end action for member : 2 
+
+AM[1]=27.64
+AM[2]=55.12
+AM[3]=-7.64
+AM[4]=15.44
+
+[AM] Member end action for member : 3 
+
+AM[1]=0.51
+AM[2]=-15.43
+AM[3]=16.13
+AM[4]=-20.00
